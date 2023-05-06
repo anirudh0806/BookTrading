@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.listen(5000 , () => console.log("Server has started"));
+app.listen(process.env.PORT , () => console.log("Server has started"));
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING,
 {
