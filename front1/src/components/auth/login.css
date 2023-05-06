@@ -1,0 +1,75 @@
+.abc{
+  background-color: black;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  /* margin:  auto; */
+  /* width: 1200px; */
+  width: auto;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  /* height: 600px; */
+  height: 100vh;
+}
+.alert{
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 620px;
+}
+.abc h1{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 480;
+}
+
+.inputs{
+  outline: none;
+  width: 275px;
+  font-size: large;
+  background-color: black;
+  height: 50px;
+  color: white;
+  border: none;
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+
+.input p {
+  margin-left: 600px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.button{
+  width: 310px;
+  height: 50px;
+  margin-top: 12px;
+  background: #1e4997;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 150%;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+}
+
+.register {
+  font-size:15px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+
+}
+.register a{
+  color: #27cdff;
+  font-weight: 600;
+}

@@ -1,0 +1,57 @@
+.container1{
+    position: left;
+    background-color: white;
+    /* background-image: url("https://images.wallpaperscraft.com/image/library_multistorey_architecture_139118_1920x1080.jpg"); */
+    background-repeat: no-repeat;
+    margin-top: 8%;
+    
+    width: 750px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 350px;
+    
+  }
+
+  .one{
+    color:rgb(23,107,239);
+    height:35px;
+    width:150px;
+    margin-left: 3.5%;
+    font-size: 20px;
+    border-radius: 9px;
+    border-color: blue;
+  }
+  .two{
+    height:35px;
+    width:150px;
+    margin-left: 15%;
+    font-size: 20px;
+    border-radius: 9px;
+    border-color: blue;
+  }
+  .three{
+    
+    height:35px;
+    width:150px;
+    margin-left: 15%;
+    font-size: 20px;
+    border-radius: 9px;
+    border-color: blue;
+  }
+  .unga
+  {
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row;
+   margin-top: 30px;
+  }
+  
+  .child
+  {
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid black;
+    
+  }
+  

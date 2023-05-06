@@ -1,0 +1,79 @@
+.form{
+  background-color: black;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  width: 100vw;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 100vh;
+}
+
+.alert{
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 620px;
+}
+h3{
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+.form-input{
+  outline: none;
+  width: 245px;
+  background-color: black;
+  height: 40px;
+  color: white;
+  border: none;
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+
+.form-inputs p {
+  margin-left: 600px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.btn1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 600px;
+  width: 310px;
+  height: 50px;
+  margin-top: 10px;
+  background: linear-gradient(
+  90deg,
+  rgb(39, 176, 255) 0%,
+  rgb(0, 232, 236) 100%
+  );
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+}
+
+.login {
+  font-size:15px;
+  margin-left: 630px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+}
+.login a{
+  color: #27cdff;
+  font-weight: 600;
+}
