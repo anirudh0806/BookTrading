@@ -18,7 +18,11 @@ Welcome to the MERN Stack Book Trading Application! This project is a full-stack
 ## Technologies Used
 
 MongoDB: Used as the database to store user information, book listings, and trade requests.
-Express.js: Used to build the backend API for handling user authentication, book listing, and trade requests.
+
+Express.js: Used to build the backend API for handling user authentication, book listing, and trade requests.\
+
 React.js: Used to create the frontend user interface and components.
+
 Node.js: Runs the backend server and handles API requests.
+
 Google Books API: Integrated for book searching and retrieving book details.
