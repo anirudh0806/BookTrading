@@ -1,7 +1,7 @@
 # BookTrading
 
 ## MERN Stack Book Trading Application
-Welcome to the MERN Stack Book Trading Application! This project is a full-stack web application that allows users to trade books with others. The application is built using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. It also integrates with the Google Books API for book searching.
+This is a Book Trading Application! This project is a full-stack web application that allows users to trade books with others. The application is built using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. It also integrates with the Google Books API for book searching.
 
 ## Features
 
