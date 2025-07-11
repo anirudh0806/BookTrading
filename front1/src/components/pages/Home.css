@@ -1,49 +1,176 @@
+/* Import Inter font for rawg.io styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-.buttoncomp{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-	padding:10px;
-    margin:20px;
-    border-width:2px;
-    background-color:#1FA463;
-    color:#01295C;
-    border-radius:20px;
-    float:right;
+/* Root color palette: Black base with emerald green accents */
+:root {
+  --primary-green: #4caf50;
+  --primary-green-hover: #45a049;
+  --bg-black: #000000;
+  --bg-black-soft: #111111;
+  --bg-card: #0a0a0a;
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+  --accent-muted: #6b7280;
 }
-.buttoncomp:hover {
-    background-color: #E3132C; 
-    color:yellow;
-    
+
+/* GLOBAL FONT SETTINGS */
+body, html {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg-black);
+  color: var(--text-main);
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+}
+
+/* Paragraphs, spans, divs */
+p, span, div {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* BOOTSTRAP BUTTON CUSTOMIZATION */
+.btn {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.btn-success {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-green-hover);
+  border-color: var(--primary-green-hover);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+  transform: translateY(-2px);
+}
+
+/* HERO HEADINGS */
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem !important;
   }
-.header{
-    /* border-radius:20px 20px 0px 0px; */
-    height:100px;
-    width:auto;
-    margin:0px auto;
-    background-color:rgb(7, 7, 75); 
-    color: aqua;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  .lead {
+    font-size: 1.1rem !important;
+  }
 }
-.bodycomp{
-    background-color:aqua;
+
+/* STATS */
+.stats-green {
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 2rem;
+  animation: countUp 0.6s ease-out;
 }
-.textcomp{
-    color:chartreuse;
-    text-align: justify;
+
+.text-muted {
+  color: var(--text-muted) !important;
 }
-.main{
-    /* background-color: black; */
-    margin: 0px auto;
-    width: auto;
-    height: 1650px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    /* border-radius:0px 0px 20px 20px; */
-    height: 600px;
-    
-    background-blend-mode: screen;
-    background-color:black;
-  
+
+/* CUSTOM CARD STYLING */
+.card {
+  background-color: var(--bg-card);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* CTA SECTIONS */
+.bg-gradient {
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+}
+
+.bg-opacity-75 {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-opacity-10 {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HIGHLIGHT TEXT SELECTION */
+::selection {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+/* BUTTON FOCUS RINGS */
+.btn:focus,
+.btn:focus-visible {
+  outline: 2px solid var(--primary-green);
+  outline-offset: 2px;
+}
+
+/* SPACING */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ANIMATIONS */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
